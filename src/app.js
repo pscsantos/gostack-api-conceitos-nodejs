@@ -79,7 +79,7 @@ app.post("/repositories/:id/like", (request, response) => {
 
   repositories[repositorieIndex].likes++;
 
-  return response.status(204).send();
+  return response.json(repositories[repositorieIndex]);
   
 });
 
